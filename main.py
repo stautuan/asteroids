@@ -16,6 +16,9 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        
+        player.update(dt)
+        
         # fill the screen black
         screen.fill("black")
         # render the player on screen
