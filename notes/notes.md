@@ -7,7 +7,7 @@
 
 ## Organize and manage multiple objects
 
-`pygame.sprite.Group()` is a tool so we can move, update, draw objects at once
+`pygame.sprite.Group()` is a tool in which we can move, update, and draw objects at once instead of handling them separately. It does get more cluttered as we create more objects in our game.
 
 ```python
 import pygame
@@ -30,3 +30,25 @@ Shot.container(drawable)
 for obj in drawable:
     obj.draw(screen)
 ```
+
+## Delta Time
+
+What is `dt`?
+
+- It's like a stopwatch that tells you how much time has passed.
+
+Why is delta time important?
+
+- It is important because not all computers run games at the same speed.
+
+How does delta time helps?
+
+- It makes sure objects move based on time and not how fast your computer runs. If your computer slows down, the asteroids shouldn't slow down as well. If your computer speeds up, asteroids shouldn't speed up as well.
+
+## Draw shapes
+
+Draw shapes with `polygon.draw`
+
+Some of the shapes:
+`pygame.draw.polygon()`
+`pygame.draw.circle()`
