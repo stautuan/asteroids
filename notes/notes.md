@@ -1,3 +1,10 @@
+```python
+if __name__ == "__main__":
+    main()
+```
+
+This is useful if you want a certain code to only run when the file is executed directly. If it is imported into another file, it won't run automatically. This is the preferred method to avoid any unintended side effects.
+
 ## Moving objects
 
 `pygame.Vector2()` is used for moving objects in 2D space
